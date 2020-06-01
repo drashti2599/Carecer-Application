@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/cancer"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+            //first name
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#39938c"
+                android:ems="20"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#878787"
+                android:textColor="@android:color/white"
+                android:background="#11000000"
+
+                />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#39938c"
+        android:ems="20"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:ems="5"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#878787"
+        android:textColor="@android:color/white"
+        android:background="#11000000"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    //password
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#39938c"
+        android:ems="20"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:ems="5"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#878787"
+        android:textColor="@android:color/white"
+        android:background="#11000000"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    //re password
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Re-Enter Password"
+        android:textColor="#39938c"
+        android:ems="20"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/rep_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:ems="5"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#878787"
+        android:textColor="@android:color/white"
+        android:background="#11000000"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    //email
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#39938c"
+        android:ems="20"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Note:Please enter a VALID email address.)"
+        android:textColor="@android:color/white"
+        android:ems="20"
+        android:textSize="11dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        android:ems="5"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#878787"
+        android:textColor="@android:color/white"
+        android:background="#11000000"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    //gender
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#39938c"
+        android:ems="20"
+        android:textSize="20dp"/>
+    //Select gender pop
+    <TextView
+        android:id="@+id/gender_sel"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:hint="Select value"
+        android:textColorHint="#878787"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_gravity="center"
+
+    android:layout_marginTop="20dp"
+    android:text="Sign up"
+    android:textAllCaps="false"
+    android:textColor="#39938c"
+    android:background="@drawable/buttonback"
+    android:id="@+id/button_signup1"/>/>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

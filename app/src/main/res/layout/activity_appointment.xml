@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointment"
+    android:background="@drawable/back">
+    <Button
+        android:id="@+id/tv_aa"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Add Appointment"
+        android:gravity="center"
+        android:background="@drawable/background_cancerbuttons"
+        app:layout_constraintBottom_toTopOf="@+id/abc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Update Appointment"
+        android:gravity="center"
+        android:background="@drawable/background_cancerbuttons"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        />
+    <TextView
+        android:id="@+id/tv_da"
+        android:background="@drawable/background_cancerbuttons"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:text="Delete Appointment"
+        app:layout_constraintTop_toBottomOf="@id/abc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_percent="0.8"
+        />
+
+</android.support.constraint.ConstraintLayout>
